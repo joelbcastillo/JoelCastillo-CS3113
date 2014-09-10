@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0975C991-0B3D-4718-87FA-45D93F3D993A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>C++-Crash-Course</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D341CF1D-B6C4-4649-8F2E-A5551BE20486</key>
+		<string>ssh://github.com/joelbcastillo/Joel-Castillo-CS3113.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>C++-Crash-Course/C++-Crash-Course/C++-Crash-Course.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D341CF1D-B6C4-4649-8F2E-A5551BE20486</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/joelbcastillo/Joel-Castillo-CS3113.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D341CF1D-B6C4-4649-8F2E-A5551BE20486</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D341CF1D-B6C4-4649-8F2E-A5551BE20486</string>
+			<key>IDESourceControlWCCName</key>
+			<string>C++-Crash-Course</string>
+		</dict>
+	</array>
+</dict>
+</plist>

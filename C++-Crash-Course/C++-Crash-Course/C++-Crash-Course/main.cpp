@@ -1,29 +1,23 @@
 #include <iostream>
+#include <fstream>
+#include <vector>
+#include <string>
 
-void printString( int n ) {
-    const char* var = "Hello, World!";
-    for( int i = 0; i < n; i++ ) {
-        std::cout << var << std::endl;
-    }
-    std::cout << std::endl;
-    int i = 0;
-    while ( i < n ) {
-        std::cout << var << std::endl;
-        i++;
-    }
-    std::cout << std::endl;
-    i = 0;
-    do {
-        std::cout << var << std::endl;
-        i++;
-    }
-    while (i < n);
+using namespace std;
 
-}
+struct HydroCarbon {
+    vector<string> names;
+    int numCarbon;
+    int numHydrogen
+};
 
-int main() {
-    const char* var = "Hello, World!";
-    std::cout << var << std::endl;
-    std::cout << std::endl;
-    printString(5);
+size_t findFormula( const vector<HydroCarbon>& listOfHC, int c, int h) {
+    size_t index;
+    
+    for( index = 0; index < listOfHC.size(); ++index;) {
+        if (listOfHC[index].numCarbon == c && listOfHC[index].numHydrogen == h ) {
+            return index;
+        }
+    }
+    return index;
 }

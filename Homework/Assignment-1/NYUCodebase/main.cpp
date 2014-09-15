@@ -25,7 +25,7 @@ GLuint LoadTexture(const char *image_path) {
                  surface->pixels);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    delete surface;
+    SDL_FreeSurface(surface);
     return textureID;
 }
 
@@ -86,32 +86,31 @@ int main(int argc, char *argv[])
 			if (event.type == SDL_QUIT || event.type == SDL_WINDOWEVENT_CLOSE) {
 				done = true;
 			}
-            // Clear the screen
-            glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-            glClear(GL_COLOR_BUFFER_BIT);
+        }
+        // Clear the screen
+        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClear(GL_COLOR_BUFFER_BIT);
+        
+        GLuint ship = LoadTexture("playerShip1_blue.png");
+        GLuint asteroid = LoadTexture("meteorBrown_big1.png");
+        
+        float ticks = (float)SDL_GetTicks()/10000.0f;
+        float elapsed = ticks - lastFrameTicks;
+        lastFrameTicks = ticks;
+        shipX += elapsed;
+        asteroidX += elapsed*2;
+        xPos += elapsed;
+        yPos += elapsed;
+        DrawSprite(ship, shipX, 0, 270);
+        DrawSprite(asteroid, asteroidX, 0, 0);
+        
+        if ( shipX >= 0.8f){
+            shipX = 500;
+            asteroidX = 500;
             
-            GLuint ship = LoadTexture("playerShip1_blue.png");
-            GLuint asteroid = LoadTexture("meteorBrown_big1.png");
-            
-            float ticks = (float)SDL_GetTicks()/10000.0f;
-            float elapsed = ticks - lastFrameTicks;
-            lastFrameTicks = ticks;
-            shipX += elapsed;
-            asteroidX += elapsed*2;
-            xPos += elapsed;
-            yPos += elapsed;
-            DrawSprite(ship, shipX, 0, 270);
-            DrawSprite(asteroid, asteroidX, 0, 0);
-            
-            if ( shipX >= 0.8f){
-                shipX = 500;
-                asteroidX = 500;
-                
-                drawRectangle(xPos, yPos);
-            }
-            
-		}
-		SDL_GL_SwapWindow(displayWindow);
+            drawRectangle(xPos, yPos);
+        }
+        SDL_GL_SwapWindow(displayWindow);
 	}
     
 	SDL_Quit();

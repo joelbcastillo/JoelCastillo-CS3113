@@ -12,7 +12,7 @@
 	<dict>
 		<key>83C3800CDF2553DED6E9D49F6DBF586B5C239FA4</key>
 		<string>github.com:joelbcastillo/JoelCastillo-CS3113.git</string>
-		<key>F87D4E01-87C9-4ED5-ACA3-538F5AE59987</key>
+		<key>87B8BDFD3B7109C7EE5C9A42582B5A75074E57CC</key>
 		<string>ssh://github.com/ivansafrin/CS3113.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
@@ -21,7 +21,7 @@
 	<dict>
 		<key>83C3800CDF2553DED6E9D49F6DBF586B5C239FA4</key>
 		<string>../../..</string>
-		<key>F87D4E01-87C9-4ED5-ACA3-538F5AE59987</key>
+		<key>87B8BDFD3B7109C7EE5C9A42582B5A75074E57CC</key>
 		<string>../../../../CS3113</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -36,7 +36,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>F87D4E01-87C9-4ED5-ACA3-538F5AE59987</string>
+			<string>87B8BDFD3B7109C7EE5C9A42582B5A75074E57CC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>CS3113</string>
 		</dict>
